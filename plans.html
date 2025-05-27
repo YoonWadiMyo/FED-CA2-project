@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS from CDN for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Bootstrap Icons for icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"> <!-- Poppins font from Google Fonts -->
+    <!-- Popper.js for Bootstrap tooltips and popovers -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript for interactive components -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <link href="CSS/plans.css" rel="stylesheet">
+    <link href="CSS/general.css" rel="stylesheet">
+    <script src="JS/plans.js" defer></script>
+    <title>SP 70</title>
+</head>
+
+<body>
+    <!-- header with header logo and navbar -->
+    <header>
+        <!-- container with the logo -->
+        <div class="container-fluid mt-3 mb-3">
+            <div class="row">
+                <!-- header logo with different column sizes on different view-widths -->
+                <a href="https://www.sp.edu.sg/sp70">
+                    <img src="images/SP-70-logo.png" class="mx-auto d-block col-8 col-sm-6 col-md-4 col-lg-3"
+                        alt="SP70"><!--source: SP website-->
+                </a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-xl bg-danger-subtle py-0">
+            <div class="container-md">
+                <!-- navbar brand image with link to SP official and additional text -->
+                <a class="navbar-brand d-flex align-items-center" href="https://www.sp.edu.sg">
+                    <img src="images/SP.png" alt="SP" width="50" class="me-2"><!--source: SP website-->
+                    <span>Singapore Polytechnic</span>
+                </a>
+                <!-- navbar toggle button in small view-widths -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- three navbar buttons with icon and text -->
+                    <ul class="nav nav-tabs navbar-nav ms-auto">
+                        <!-- home navbar button -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">
+                                <i class="bi bi-house-fill"></i> Home
+                            </a>
+                        </li>
+                        <!-- achievements and plans navbar button -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="plans.html">
+                                <i class="bi bi-trophy-fill"></i> Future Plans & Achievements
+                            </a>
+                        </li>
+                        <!-- feedback form button -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="form.html">
+                                <i class="bi bi-send-fill"></i> Send Your Wishes
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content for Future Plans & Achievements section -->
+    <div class="container mt-3 text-center">
+        <h2 class="pt-3">Future Plans & Achievements</h1>
+            <div class="line-divider mx-auto"></div>
+    </div>
+    <!-- Banner with video and overlay text -->
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+            <div class="col-12 position-relative">
+                <!-- Banner video for larger screens -->
+                <video autoplay loop muted class="w-100 d-none d-md-block">
+                    <source src="images/sustainability-banner-video.mp4" type="video/mp4"><!--source: SP website-->
+                </video>
+                <!-- Banner video for smaller screens -->
+                <video autoplay loop muted class="w-100 d-md-none">
+                    <source src="images/sustainability-banner-video-cropped.mp4" type="video/mp4">
+                    <!--source: SP website-->
+                </video>
+
+                <!-- Overlay text on the video -->
+                <div
+                    class="overlay-text d-flex align-items-center justify-content-center text-center position-absolute top-0 start-0 w-100 h-100 px-3">
+                    <h1 class="display-3 text-primary fw-bold d-none d-lg-block">
+                        SP's 60-30 Vision is to reduce our greenhouse gas emissions by 60% by 2030
+                    </h1>
+                    <h1 class="display-4 text-primary fw-bold d-none d-md-block d-lg-none">
+                        SP's 60-30 Vision is to reduce our greenhouse gas emissions by 60% by 2030
+                    </h1>
+                    <h3 class="text-primary fw-bold d-block d-sm-none">
+                        SP's 60-30 Vision is to reduce our greenhouse gas emissions by 60% by 2030
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section for SP initiatives with numbers -->
+    <div class="container mt-5 text-center">
+        <h2><span class="text-danger fw-bolder">SP</span> initiatives in numbers</h2>
+        <div class="line-divider mx-auto"></div>
+    </div>
+    <div class="row mt-4 text-center">
+        <!-- Initiative 1 -->
+        <div class="col-md-4 col-sm-6 col-12 initiative">
+            <h3>110+</h3>
+            <p>Water Coolers</p>
+            <p>The campus has over 110 water coolers installed to promote the use of reusable bottles and reduce plastic
+                waste</p>
+        </div>
+        <!-- Initiative 2 -->
+        <div class="col-md-4 col-sm-6 col-12 initiative">
+            <h3>2000+</h3>
+            <p>Square Meters of Solar Panels</p>
+            <p>Solar panels have been installed on the campus to harness renewable energy</p>
+        </div>
+        <!-- Initiative 3 -->
+        <div class="col-md-4 col-sm-6 col-12 initiative">
+            <h3>5</h3>
+            <p>Electric Vehicle Charging Stations</p>
+            <p>The EV charging stations available support the use of eco-friendly vehicles</p>
+        </div>
+        <!-- Initiative 4 -->
+        <div class="col-md-4 col-sm-6 col-12 initiative">
+            <h3>3000+</h3>
+            <p>Trees and Plants</p>
+            <p>The campus has lots of trees and plants to enhance the green space and contribute to better air quality
+            </p>
+        </div>
+        <!-- Initiative 5 -->
+        <div class="col-md-4 col-sm-6 col-12 initiative">
+            <h3>150+</h3>
+            <p>Recycling Bins</p>
+            <p>There are recylcing bins placed around the campus to encourage recycling among students and staff</p>
+        </div>
+        <!-- Initiative 6 -->
+        <div class="col-md-4 col-sm-6 col-12 initiative">
+            <h3>1000 m<sup>3</sup></h3>
+            <p>Rainwater Harvested Annually</p>
+            <p>The campus has a rainwater harvesting system that collects and reuses approximately 1,000 cubic meters of
+                rainwater annually</p>
+        </div>
+    </div>
+    <hr>
+    <!-- Section with image and text -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 col-12 image-column">
+                <img src="images/with sp, it's so possible.jpeg" alt="Description"
+                    class="img-fluid"><!--edited by me using photoshop-->
+            </div>
+            <div class="col-md-6 col-12 text-column">
+                <div class="text">I want to be a <span class="typing"></span></div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 col-12 text-column">
+                <div class="text fw-bold">
+                    It's...
+                    <br><span class="text-hastag text-bolder">#SoPossible</span>
+                    <br>with <span class="fst-italic"> Singapore's First Poly</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 image-column">
+                <figure class="figure">
+                    <img src="images/banner-3_-sp-top-graduates.jpg" alt="Description"
+                        class="figure-img img-fluid"><!--source: SP website-->
+                    <figcaption class="figure-caption">Top Graduates from SP's class of 2024</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <figure class="text-center"><!--source: https://en.wikipedia.org/wiki/Singapore_Polytechnic#Recognition-->
+        <blockquote class="blockquote">
+            <h2>SP achievements</h2>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+            These awards highlight SP's commitment to quality education, environmental sustainability, organizational
+            excellence, and community involvement.
+        </figcaption>
+    </figure>
+
+    <!-- Table of SP achievements -->
+    <div class="container mt-4">
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Award</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2010</td>
+                        <td>President's Award for the Environment</td>
+                    </tr>
+                    <tr>
+                        <td>2011</td>
+                        <td>South West Environment and Community Award</td>
+                    </tr>
+                    <tr>
+                        <td>2015</td>
+                        <td>ASEAN People's Award</td>
+                    </tr>
+                    <tr>
+                        <td>N/A</td>
+                        <td>Singapore Quality Class</td>
+                    </tr>
+                    <tr>
+                        <td>N/A</td>
+                        <td>ISO 9001 Certification</td>
+                    </tr>
+                    <tr>
+                        <td>N/A</td>
+                        <td>ISO 14001 Certification</td>
+                    </tr>
+                    <tr>
+                        <td>N/A</td>
+                        <td>Singapore Public Service Award for Organisational Excellence</td>
+                    </tr>
+                    <tr>
+                        <td>N/A</td>
+                        <td>People Developer Award</td>
+                    </tr>
+                    <tr>
+                        <td>N/A</td>
+                        <td>Family Friendly Award</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<hr>
+<!-- Footer with additional links and information -->
+<footer class="text-center text-lg-start footer-background">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">About Us</h5>
+                <p>
+                    We are celebrating Singapore Polytechnic's 70 years of excellence in education and innovation.
+                </p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase text-center mb-4">Social Media</h5>
+                <div class="social-media-links text-center">
+                    <a href="https://www.facebook.com/singaporepolytechnic" class="me-2"><i
+                            class="bi bi-facebook"></i></a>
+                    <a href="https://instagram.com/singaporepoly" class="me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@singaporepoly?lang=en" class="me-2"><i
+                            class="bi bi-tiktok"></i></a>
+                    <a href="https://www.linkedin.com/company/singapore-polytechnic/jobs" class="me-2"><i
+                            class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <a href="https://tech.gov.sg/report_vulnerability" id="footer-link">Report
+                    Vulnerability</a>&nbsp;&nbsp;/&nbsp;
+                <a href="https://www.sp.edu.sg/sp/privacy-statement" id="footer-link">Privacy
+                    Statement</a>&nbsp;&nbsp;/&nbsp;
+                <a href="https://www.sp.edu.sg/sp/terms-of-use" id="footer-link">Terms of
+                    Use</a>&nbsp;&nbsp;/&nbsp;
+                <a href="https://www.sp.edu.sg/sp/sitemap" id="footer-link">Sitemap</a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom text-white py-3 text-center">
+        <p class="mb-0">© 2024 Singapore Polytechnic. All rights reserved.</p>
+        <img src="images/SP-footer.png" alt="Footer Logo" style="max-width: 150px; height: auto;" class="mt-2">
+    </div>
+</footer>
+
+</html>

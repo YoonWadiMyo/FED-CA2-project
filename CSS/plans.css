@@ -1,0 +1,109 @@
+/* styles for the video container */
+.video-container {
+    overflow: hidden;
+}
+
+/* video styling */
+.video-container video {
+    height: auto;
+    display: block;
+}
+
+/* overlay-text */
+.overlay-text {
+    max-width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+h1 {
+    text-shadow: 5px 5px 2px rgb(120, 212, 207);
+}
+
+.line-divider {
+    display: inline-block;
+    width: 20%;
+    height: 2px;
+    background-color: red;
+    margin-top: 10px;
+    /* Space between the text and the line */
+}
+
+.initiative {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* styles for subheadings with gradient text */
+h3 {
+    background-image: linear-gradient(90deg, #b82433 25%, #fd1d1d 40%, #fb9300 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.image-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.text-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: white;
+    color: #000;
+}
+
+.text {
+    font-size: 2rem;
+    font-weight: 600;
+    display: inline;
+}
+
+/* styles for typing animation */
+.typing {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #face30;
+    display: inline;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #face30;
+    animation: typing 3s steps(40) infinite, blink .75s step-end infinite;
+}
+
+/* keyframes for typing animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Keyframes for blinking cursor effect */
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #face30;
+    }
+}
+
+/* Styles for hashtag text */
+.text-hastag {
+    color: #f6323e;
+    font-weight: 900;
+}

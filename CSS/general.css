@@ -1,0 +1,47 @@
+/*font*/
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* active navbutton of respective homepage has invisible box-shadow border at bottom */
+.nav-link.active {
+    box-shadow: inset 0 -5px 0 0 orangered;
+}
+
+/* inactive navbuttons of respective homepage have invisible box-shadow border at bottom */
+.nav-link:not(.active) {
+    box-shadow: inset 0 -5px 0 0 #e2e3e5;
+}
+
+/* when hovered onto inactive navbuttons, box-shadow color is changed in transition delay */
+.nav-link:not(.active):hover {
+    box-shadow: inset 0 -5px 0 0 #f6323e;
+    transition: box-shadow 0.7s;
+}
+
+/* setting  footer background to be black */
+.footer-background {
+    background-color: black;
+}
+
+/* setting the texts colors to be white */
+.footer-background h5,
+.footer-background p,
+.footer-background a {
+    color: white;
+}
+
+.footer-background a:hover {
+    color: #ccc;
+    /* lighter color on hover for links */
+}
+
+/* setting  footer background to be black */
+.footer-bottom {
+    background-color: black;
+}
+
+.footer-bottom img {
+    max-width: 150px;
+    height: auto;
+}

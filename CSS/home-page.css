@@ -1,0 +1,71 @@
+/*Styles for the slot machine effect*/
+.slot-machine {
+    display: inline-block;
+    height: 1em;
+    overflow: hidden;
+    line-height: 1em;
+    vertical-align: middle;
+}
+
+.slot-machine span {
+    display: block;
+    animation: slot-machine-spin 3s steps(9) infinite; /* applies the slot machine animation */
+}
+
+/* Defines the keyframes for the slot machine animation */
+@keyframes slot-machine-spin {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-300%); /* moves the content up to create the spinning effect */
+    }
+}
+
+/* styles for the timeline */
+.timeline {
+    height: 550px;
+    width: 10px;
+}
+
+/* creates the vertical line in the timeline */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: red;
+    left: 50%;
+    margin-left: -1px;
+}
+
+/* styles for each event in the timeline */
+.timeline-event .timeline-badge {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    border: 2px solid black;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+/* styles for the box that appears with each timeline event */
+.timeline-event .timeline-box {
+    width: 120px;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+/* positions the event box to the left of the timeline */
+.timeline-event .timeline-box-left {
+    left: -150px;
+}
+
+/* positions the event box to the right of the timeline */
+.timeline-event .timeline-box-right {
+    left: 50px;
+}
